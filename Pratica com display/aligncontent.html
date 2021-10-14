@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Content</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+      
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+
+        }
+        .item{
+            background-color: black;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+         
+
+        }
+        .stretch{
+           align-content: center;
+
+        }
+        .center{
+           align-content: center;
+        }
+        .start{
+            align-content: flex-start;
+
+        }
+        .end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p><strong>stretch</strong></p>
+    <div class="container stretch">
+        <div class="item">Lorem, ipsum dolor sit amet consam.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero rem !</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo !</div>
+        <div class="item">. Ea praesentium mollitia ipsa provident assumendmaiores odit.s?</div>
+        <div class="item">ciendis autem, libero possimus recusandae temporibus quam qui cumque quisquam!</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipivoluptates offic.</div>
+        <div class="item">Lorem ipsum dolor sit amet .</div>
+
+    </div>
+
+    <hr><hr>
+
+    <p><strong>center</strong></p>
+    <div class="container center">
+        <div class="item">Lorem, ipsum dolor sit amet consectetur ad.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero rem </div>
+        <div class="item">Lorem ipsum dolor sit amet cons provident, repell, ipsum neque!</div>
+        <div class="item">. Ea praesentium mollitia ipsa maiores odit.s?</div>
+        <div class="item">ciendis autem, libero possimus !</div>
+        <div class="item">Lorem ipsum dolor sit, amet  voluptates offic.</div>
+        <div class="item">Lorem ipsum dolor sit amet .</div>
+
+    </div>
+
+    <hr><hr>
+
+    <p><strong>flex-start</strong></p>
+    <div class="container start">
+        <div class="item">Lorem, ipsum dolor sit amet consectetur ad.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero rem </div>
+        <div class="item">Lorem ipsum dolor sit amet cons provident, repell, ipsum neque!</div>
+        <div class="item">. Ea praesentium mollitia ipsa maiores odit.s?</div>
+        <div class="item">ciendis autem, libero possimus !</div>
+        <div class="item">Lorem ipsum dolor sit, amet  voluptates offic.</div>
+        <div class="item">Lorem ipsum dolor sit amet .</div>
+    </div>
+        <hr><hr>
+
+        <p><strong>flex-end</strong></p>
+    <div class="container end">
+        <div class="item">Lorem, ipsum dolor sit amet consectetur ad.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero rem </div>
+        <div class="item">Lorem ipsum dolor sit amet cons provident, repell, ipsum neque!</div>
+        <div class="item">. Ea praesentium mollitia ipsa maiores odit.s?</div>
+        <div class="item">ciendis autem, libero possimus !</div>
+        <div class="item">Lorem ipsum dolor sit, amet  voluptates offic.</div>
+        <div class="item">Lorem ipsum dolor sit amet .</div>
+
+    </div>
+
+    <hr><hr>
+    <p><strong>space-around</strong></p>
+    <div class="container space-around">
+        <div class="item">Lorem, ipsum dolor sit amet consectetur ad.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero rem </div>
+        <div class="item">Lorem ipsum dolor sit amet cons provident, repell, ipsum neque!</div>
+        <div class="item">. Ea praesentium mollitia ipsa maiores odit.s?</div>
+        <div class="item">ciendis autem, libero possimus !</div>
+        <div class="item">Lorem ipsum dolor sit, amet  voluptates offic.</div>
+        <div class="item">Lorem ipsum dolor sit amet .</div>
+
+    </div>
+
+    <hr><hr>
+
+    <p><strong>space-between</strong></p>
+    <div class="container space-between">
+        <div class="item">Lorem, ipsum dolor sit amet consectetur ad.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero rem </div>
+        <div class="item">Lorem ipsum dolor sit amet cons provident, repell, ipsum neque!</div>
+        <div class="item">. Ea praesentium mollitia ipsa maiores odit.s?</div>
+        <div class="item">ciendis autem, libero possimus !</div>
+        <div class="item">Lorem ipsum dolor sit, amet  voluptates offic.</div>
+        <div class="item">Lorem ipsum dolor sit amet .</div>
+
+    </div>
+</body>
+</html>
