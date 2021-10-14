@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: dodgerblue;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+
+        }
+        .flex{
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+
+    .column{
+        flex-direction: column;
+    }
+    .central{
+        height: 500px;
+        justify-content: center;
+
+    }
+    .central .item{
+        flex: 0;
+        padding: 20px;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>row</h1>
+    <p><strong>Center</strong></p>
+    <section class="container center flex" >
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <div class="item">Item 3 Lorem ipsum dolor sit amet  </div>
+    </section>
+<hr>
+
+<p><strong>Stretch</strong></p>
+    <section class="container center stretch" >
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, error officiis ipsam esse iste et illo.</div>
+        <div class="item">Item 3 Lorem ipsum dolor sit amet  </div>
+    </section>
+    <hr>
+
+    <p><strong>flex-start</strong></p>
+    <section class="container center start" >
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, error officiis ipsam esse iste et illo.</div>
+        <div class="item">Item 3 Lorem ipsum dolor sit amet  </div>
+    </section>
+
+    <hr>
+    <p><strong>flex-end</strong></p>
+    <section class="container center end" >
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, error officiis ipsam esse iste et illo.</div>
+        <div class="item">Item 3 Lorem ipsum dolor sit amet  </div>
+    </section>
+
+    <hr>
+    <p><strong>baseline</strong></p>
+    <section class="container center baseline" >
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, error officiis ipsam esse iste et illo.</div>
+        <div class="item">Item 3 Lorem ipsum dolor sit amet  </div>
+    </section>
+
+    <hr> <hr>
+    <h1>column</h1>
+    <p><strong>flex-start</strong></p>
+    <section class="container start column" >
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, error officiis ipsam esse iste et illo.</div>
+        <div class="item">Item 3 Lorem ipsum dolor sit amet  </div>
+    </section>
+
+    <p><strong>flex-emd</strong></p>
+    <section class="container end column" >
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, error officiis ipsam esse iste et illo.</div>
+        <div class="item">Item 3 Lorem ipsum dolor sit amet  </div>
+    </section>
+
+    <p><strong>Center</strong></p>
+    <section class="container center column" >
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <div class="item">Item 3 Lorem ipsum dolor sit amet  </div>
+    </section>
+
+    <p><strong>baseline</strong></p>
+    <section class="container  baseline column" >
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, error </div>
+        <div class="item">Item 3 Lorem ipsum dolor sit amet  </div>
+    </section>
+
+    <hr><hr>
+
+    <p><strong>Alinhamento Central a Tela</strong></p>
+    <section class="container center central">
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae expedita cum repellat soluta omnis illum neque a iure .</div>
+    </section>
+</body>
+
+</html>
