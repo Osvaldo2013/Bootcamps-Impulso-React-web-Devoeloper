@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura básica e prática com flex</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid red;
+            max-width: 400px;
+            margin-bottom: 10px;
+        }
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin:5px;
+
+        }
+        .flex-1{
+            flex: 1;/*grow =1, shink =1, basis=0*/
+        }
+        .largura{
+            width: 200px;
+            /*min-width: 250px;*/
+        }
+        .flex-2{
+            flex: 1;/*grow =1, shink =1, basis=0*/
+        }
+    </style>
+</head>
+<body>
+    <p>flex:1</p>
+    <div class="flex-container">
+    <div class="item flex-1">A</div>
+    <div class="item flex-1">B</div>
+    <div class="item flex-1">C</div>
+    <div class="item flex-1">D</div>
+    <div class="item flex-1">EF</div>
+</div>
+
+<p>flex:mix</p>
+    <div class="flex-container">
+    <div class="item flex-1">A</div>
+    <div class="item flex-2">B</div>
+    <div class="item flex-2">Ccccc</div>
+    <div class="item flex-1">D</div>
+    <div class="item flex-1">EcF</div>
+</div>
+<p>width ignorado </p>
+    <div class="flex-container">
+    <div class="item flex-1 largura">A</div>
+    <div class="item flex-1 largura">B</div>
+    <div class="item flex-1 largura">C</div>
+    <div class="item flex-1 largura">D</div>
+    <div class="item flex-1 largura">EF</div>
+</div>
+</body>
+</html>
